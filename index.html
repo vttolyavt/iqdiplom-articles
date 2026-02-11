@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезные статьи о написании дипломных работ | IQ Diplom</title>
+    <meta name="description" content="Подробные руководства по написанию дипломных работ: от введения до защиты. Актуальная информация 2026 года, примеры, образцы, чек-листы и профессиональные советы.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="yandex" content="none">
+    <link rel="stylesheet" href="css/article-styles.css">
+
+    <!-- Schema.org markup for Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Полезные статьи о написании дипломных работ",
+        "description": "Комплексные руководства по написанию дипломных работ: от планирования до защиты",
+        "publisher": {
+            "@type": "Organization",
+            "name": "IQ Diplom",
+            "url": "https://iqdiplom.ru"
+        }
+    }
+    </script>
+
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-section h1 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            transition: border-color 0.2s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--background-alt);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+        }
+
+        .filter-btn:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .article-card {
+            background-color: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+            border-color: var(--primary-color);
+        }
+
+        .article-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .article-card h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .article-card h3 a:hover {
+            color: var(--primary-color);
+        }
+
+        .article-description {
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .article-meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+
+        .tag {
+            background-color: var(--background-alt);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .tag.category-structure { background-color: #dbeafe; border-color: #93c5fd; color: #1e40af; }
+        .tag.category-process { background-color: #d1fae5; border-color: #6ee7b7; color: #065f46; }
+        .tag.category-formatting { background-color: #fce7f3; border-color: #f9a8d4; color: #9f1239; }
+        .tag.category-examples { background-color: #fef3c7; border-color: #fcd34d; color: #92400e; }
+
+        .stats-section {
+            background-color: var(--background-alt);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-item h3 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .stat-item p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+
+            .hero-section p {
+                font-size: 1.125rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>📚 Полезные статьи о написании дипломных работ</h1>
+        <p>Комплексные руководства по всем аспектам дипломной работы — от планирования до защиты. Актуальная информация 2026 года.</p>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Поиск статей...">
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">Все статьи</button>
+        <button class="filter-btn" data-category="structure">Структура диплома</button>
+        <button class="filter-btn" data-category="process">Процесс написания</button>
+        <button class="filter-btn" data-category="formatting">Оформление</button>
+        <button class="filter-btn" data-category="examples">Примеры и образцы</button>
+    </div>
+
+    <div class="container">
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <h2>Почему наши статьи полезны</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>11</h3>
+                    <p>Подробных статей</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25,000+</h3>
+                    <p>Слов экспертного контента</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2026</h3>
+                    <p>Актуальные стандарты ГОСТ</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100+</h3>
+                    <p>Практических примеров</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articlesGrid">
+            <!-- Article 1 -->
+            <article class="article-card" data-category="structure">
+                <h3><a href="vvedenie-k-diplomnoi-rabote.html">Введение к дипломной работе</a></h3>
+                <p class="article-description">Полное руководство по написанию введения: 6 обязательных элементов, пошаговая инструкция, примеры из разных областей и частые ошибки.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-structure">Структура</span>
+                    <span class="tag">2000-2500 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-category="process">
+                <h3><a href="skolko-vremeni-dlya-napisaniya-diploma.html">Сколько требуется времени для написания диплома</a></h3>
+                <p class="article-description">Реалистичные временные рамки для написания дипломной работы, факторы влияния, пошаговый график и стратегии экономии времени.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-process">Процесс</span>
+                    <span class="tag">1800-2200 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-category="structure">
+                <h3><a href="zaklyuchenie-k-diplomnoi-rabote.html">Заключение к дипломной работе</a></h3>
+                <p class="article-description">Как правильно написать заключение: структура, ключевые элементы, примеры из разных дисциплин и связь с введением.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-structure">Структура</span>
+                    <span class="tag">2000-2500 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="article-card" data-category="process">
+                <h3><a href="kak-delat-plan-diplomnoi-raboty.html">Как делать план дипломной работы</a></h3>
+                <p class="article-description">Создание эффективного плана диплома: стандартная структура, баланс теории и практики, 5 примеров планов и процесс согласования.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-process">Процесс</span>
+                    <span class="tag">2500-3000 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card" data-category="process">
+                <h3><a href="kak-napisat-diplom-samostoyatelno.html">Как написать диплом самостоятельно</a></h3>
+                <p class="article-description">Полная методология самостоятельного написания: 7 ключевых шагов, сбор ресурсов, тайм-менеджмент и контроль качества.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-process">Процесс</span>
+                    <span class="tag">2500-3000 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-card" data-category="examples">
+                <h3><a href="kak-napisat-vvedenie-s-obrazcom.html">Как правильно написать введение с образцом</a></h3>
+                <p class="article-description">Детальный разбор каждого элемента введения с 3 полными аннотированными примерами и рубрикой оценки качества.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-examples">Примеры</span>
+                    <span class="tag">2500-3000 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 7 (Hub) -->
+            <article class="article-card" data-category="process" style="border: 2px solid var(--primary-color);">
+                <h3><a href="kak-pravilno-napisat-diplomnuyu-rabotu.html">Как правильно написать дипломную работу ⭐</a></h3>
+                <p class="article-description">ГЛАВНОЕ РУКОВОДСТВО: Полный жизненный цикл дипломной работы от выбора темы до защиты. Методология исследования, форматирование, антиплагиат и подготовка к защите.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-process">Процесс</span>
+                    <span class="tag">3000-3500 слов</span>
+                    <span class="tag" style="background-color: #fef3c7; border-color: #fcd34d; color: #92400e;">Hub статья</span>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="article-card" data-category="process">
+                <h3><a href="material-dlya-diplomnoi-raboty.html">Материал для дипломной работы и его систематизация</a></h3>
+                <p class="article-description">Сбор и организация исследовательских материалов: 5 типов источников, цифровые инструменты, стратегии ведения заметок и отслеживание цитирования.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-process">Процесс</span>
+                    <span class="tag">2000-2500 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="article-card" data-category="formatting">
+                <h3><a href="obrazec-oformleniya-diploma-2026.html">Образец оформления дипломной работы 2026</a></h3>
+                <p class="article-description">Актуальные требования ГОСТ 2026: разметка страниц, шрифты, нумерация, таблицы, рисунки, список литературы и приложения.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-formatting">Оформление</span>
+                    <span class="tag">2200-2700 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="article-card" data-category="examples">
+                <h3><a href="primer-diplomnoi-raboty.html">Пример дипломной работы</a></h3>
+                <p class="article-description">Как эффективно использовать примеры дипломных работ: анализ образцов, что адаптировать и чего избегать, этические аспекты.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-examples">Примеры</span>
+                    <span class="tag">1800-2200 слов</span>
+                </div>
+            </article>
+
+            <!-- Article 11 -->
+            <article class="article-card" data-category="structure">
+                <h3><a href="chto-pisat-v-pervoi-glave-diploma.html">Что писать в первой главе диплома</a></h3>
+                <p class="article-description">Теоретические основы в первой главе: назначение, стандартная структура, обзор литературы, концептуальные рамки и баланс широты и глубины.</p>
+                <div class="article-meta-tags">
+                    <span class="tag category-structure">Структура</span>
+                    <span class="tag">2500-3000 слов</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h2>Нужна помощь с дипломной работой?</h2>
+            <p>Наши специалисты с опытом более 15 лет помогут вам на любом этапе написания дипломной работы</p>
+            <a href="https://iqdiplom.ru" class="cta-button">Получить консультацию</a>
+        </div>
+    </div>
+
+    <footer class="article-footer container">
+        <p>&copy; 2026 IQ Diplom. Все материалы обновлены в соответствии с актуальными требованиями ГОСТ и академическими стандартами.</p>
+        <p>Последнее обновление: 11 февраля 2026 года</p>
+    </footer>
+
+    <script>
+        // Search functionality
+        const searchBox = document.getElementById('searchBox');
+        const articlesGrid = document.getElementById('articlesGrid');
+        const articleCards = articlesGrid.getElementsByClassName('article-card');
+
+        searchBox.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+
+            Array.from(articleCards).forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('.article-description').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+
+                // Add active class to clicked button
+                this.classList.add('active');
+
+                const category = this.getAttribute('data-category');
+
+                Array.from(articleCards).forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
